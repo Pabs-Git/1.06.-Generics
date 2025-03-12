@@ -2,9 +2,7 @@ package Ejercicio_1.classes;
 
 public class NoGenericMethods<T> {
 
-    private T object1;
-    private T object2;
-    private T object3;
+    private T object1, object2, object3;
 
     public NoGenericMethods(T object1, T object2, T object3) {
         this.object1 = object1;
@@ -38,10 +36,8 @@ public class NoGenericMethods<T> {
 
     @Override
     public String toString() {
-        return "NoGenericMethods{" +
-                "object1=" + object1 +
+        return "object1=" + object1 +
                 ", object2=" + object2 +
-                ", object3=" + object3 +
-                '}';
+                ", object3=" + object3;
     }
 }

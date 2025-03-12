@@ -6,12 +6,12 @@ public class Main {
 
     public static void main(String[] args) {
 
-        NoGenericMethods<String> strings = new NoGenericMethods<>("Hola", "Mundo", "Java");
-        NoGenericMethods<Integer> integers = new NoGenericMethods<>(1, 2, 3);
-        NoGenericMethods<String> differentOrder = new NoGenericMethods<>("Java", "Hola", "Mundo");
+        NoGenericMethods<String> order1 = new NoGenericMethods<>("Hola", "Mundo", "Java");
+        NoGenericMethods<String> order2 = new NoGenericMethods<>("Mundo", "Java","Hola");
+        NoGenericMethods<String> order3 = new NoGenericMethods<>("Java", "Hola", "Mundo");
 
-        System.out.println(strings);
-        System.out.println(integers);
-        System.out.println(differentOrder);
+        System.out.println(order1);
+        System.out.println(order2);
+        System.out.println(order3);
     }
 }
